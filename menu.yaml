@@ -1,0 +1,37 @@
+---
+menu:
+  - Old Fashioned:
+      base: Bourbon
+      category: Ancestrals
+      ingredients:
+        - Bourbon
+        - Maple syrup
+        - Angostura bitters
+  - Sidecar:
+      base: Bourbon
+      category: Sours
+      ingredients:
+        - Bourbon
+        - Cointreau
+        - Lemon juice
+  - "Gin & Tonic":
+      base: Gin
+      category: Highballs
+      ingredients:
+        - Gin
+        - Tonic water
+  - Gimlet:
+      base: Gin
+      category: Sours
+      ingredients:
+        - Gin
+        - Lime juice
+        - Simple syrup
+  - Bennet:
+      base: Gin
+      category: Sours
+      ingredients:
+        - Gin
+        - Lime juice
+        - Simple syrup
+        - Angostura bitters
