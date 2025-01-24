@@ -7,6 +7,13 @@ menu:
         - Bourbon
         - Maple syrup
         - Angostura bitters
+  - Boulevardier:
+      base: Bourbon
+      category: Spirit-Forward
+      ingredients:
+        - Bourbon
+        - Campari
+        - Sweet vermouth
   - Sidecar:
       base: Bourbon
       category: Sours
@@ -35,3 +42,6 @@ menu:
         - Lime juice
         - Simple syrup
         - Angostura bitters
+
+out_of_stock:
+  - Rye whiskey
