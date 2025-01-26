@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Cocktail Menu{% endblock %}
+{% block content %}
+{% for bev in bevs %}
+	{% for name, details in bev.items() %}
+		<h2>{{ name }}</h2>
+		<ul>
+			{% for ingredient in details['ingredients'] %}
+				{% for name, amount in ingredient.items() %}
+				<li>{{ amount }} {{ name }}</li>
+				{% endfor %}
+			{% endfor %}
+		</ul>
+		<h3>Directions!</h3>
+		{{ details['directions'] }}
+	{% endfor %}
+{% endfor %}
+{% endblock %}
