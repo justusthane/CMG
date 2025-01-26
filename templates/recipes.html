@@ -2,5 +2,5 @@
 {% block amount %}{{ amount }} {% endblock %}
 {% block directions %}
 <h3>Directions</h3>
-<p>{{ details['directions'] }}</p>
+<p>{{ details['directions_html']|safe }}</p>
 {% endblock %}
