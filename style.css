@@ -1,0 +1,22 @@
+body {
+	background-color: #faf7f7;
+}
+main {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.menu main ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.menu main ul li {
+	display: inline;
+	list-style-type: disc;
+}
+
+.menu main ul li:before {
+	content: '\2022';
+	margin-right: 0.5em;
+}

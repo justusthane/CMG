@@ -1,6 +1,7 @@
 {% extends "menu.html" %}
+{% block bodyclass %}recipes{% endblock %}
 {% block amount %}{{ amount }} {% endblock %}
 {% block directions %}
 <h3>Directions</h3>
-<p>{{ details['directions_html']|safe }}</p>
+<p>{{ details['directions_html'] | safe }}</p>
 {% endblock %}
