@@ -3,8 +3,7 @@
 {% block bodyclass %}menu{% endblock %}
 {% block content %}
 <h1>{% block header %}Cocktails{% endblock %}</h1>
-{% for bev in bevs %}
-	{% for name, details in bev.items() %}
+	{% for name, details in bevs.items() %}
 		<h2>{{ name }}</h2>
 		<ul>
 			{% for ingredient in details['ingredients'] %}
@@ -15,5 +14,4 @@
 		</ul>
 		{% block directions scoped %}{% endblock %}
 	{% endfor %}
-{% endfor %}
 {% endblock %}

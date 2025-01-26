@@ -1,87 +1,87 @@
 ---
 menu:
-  - Old Fashioned:
-      base: Bourbon
-      category: Ancestrals
-      ingredients:
-        - Bourbon: 2 oz
-        - Maple syrup: 1tsp
-        - Angostura bitters: 2 dashes
-      directions: |
-        1. Stir with ice. Strain into rocks glass over large cube.
-        1. Garnish with orange twist.
-  - Boulevardier:
-      base: Bourbon
-      category: Spirit-Forward
-      ingredients:
-        - Bourbon: 1.5 oz
-        - Campari: 1 oz
-        - Sweet vermouth: 1 oz
-      directions: |
-        1. Stir with ice. Strain into rocks glass over large cube.
-        1. Garnish with orange twist.
-  - Black Manhattan:
-      base: Rye whiskey
-      category: Spirit-Forward
-      ingredients:
-        - Rye whiskey: 2 oz
-        - Amaro: 1 oz
-        - Angostura bitters: 1 dash
-        - Orange bitters: 1 dash
-      directions: |
-        1. Stir with ice. Strain into chilled coupe.
-        1. Garnish with orange twist.
-  - MonteNegroni:
-      base: Amaro Montenegro & Gin
-      category: 
-      ingredients:
-        - Amaro Montenegro: 1 1/3 oz
-        - Gin: 2/3 oz
-        - Sweet vermouth: 2/3 oz
-        - Angostura bitters: 2 drops
-      directions: |
-        1. Stir with ice. Strain into rocks glass over large cube.
-        1. Garnish with orange twist.
-  - Sidecar:
-      base: Bourbon
-      category: Sours
-      ingredients:
-        - Bourbon: 2 oz
-        - Cointreau: 1 oz
-        - Lemon juice: 0.5 oz
-      directions: |
-        1. Shake with ice. Double strain into chilled coupe.
-  - "Gin & Tonic":
-      base: Gin
-      category: Highballs
-      ingredients:
-        - Gin: 2 oz
-        - Tonic water: 4 oz
-      directions: |
-        1. Pour gin and tonic over ice in short glass.
-        1. Stir gently.
-        1. Garnish with lime wheel.
-  - Gimlet:
-      base: Gin
-      category: Sours
-      ingredients:
-        - Gin: 2 oz
-        - Lime juice: 1 oz
-        - Simple syrup: 0.5 oz
-      directions: |
-        1. Shake with ice.
-        1. Double strain into chilled coupe.
-  - Bennet:
-      base: Gin
-      category: Sours
-      ingredients:
-        - Gin: 2 oz
-        - Lime juice: 1 oz
-        - Simple syrup: 0.5  oz
-        - Angostura bitters: 1 dash
-      directions: |
-        1. Shake with ice.
-        1. Double strain into chilled coupe.
+  Old Fashioned:
+    base: Bourbon
+    category: Ancestrals
+    ingredients:
+      - Bourbon: 2 oz
+      - Maple syrup: 1tsp
+      - Angostura bitters: 2 dashes
+    directions: |
+      1. Stir with ice. Strain into rocks glass over large cube.
+      1. Garnish with orange twist.
+  Boulevardier:
+    base: Bourbon
+    category: Spirit-Forward
+    ingredients:
+      - Bourbon: 1.5 oz
+      - Campari: 1 oz
+      - Sweet vermouth: 1 oz
+    directions: |
+      1. Stir with ice. Strain into rocks glass over large cube.
+      1. Garnish with orange twist.
+  Black Manhattan:
+    base: Rye whiskey
+    category: Spirit-Forward
+    ingredients:
+      - Rye whiskey: 2 oz
+      - Amaro: 1 oz
+      - Angostura bitters: 1 dash
+      - Orange bitters: 1 dash
+    directions: |
+      1. Stir with ice. Strain into chilled coupe.
+      1. Garnish with orange twist.
+  MonteNegroni:
+    base: Amaro Montenegro & Gin
+    category: 
+    ingredients:
+      - Amaro Montenegro: 1 1/3 oz
+      - Gin: 2/3 oz
+      - Sweet vermouth: 2/3 oz
+      - Angostura bitters: 2 drops
+    directions: |
+      1. Stir with ice. Strain into rocks glass over large cube.
+      1. Garnish with orange twist.
+  Sidecar:
+    base: Bourbon
+    category: Sours
+    ingredients:
+      - Bourbon: 2 oz
+      - Cointreau: 1 oz
+      - Lemon juice: 0.5 oz
+    directions: |
+      1. Shake with ice. Double strain into chilled coupe.
+  "Gin & Tonic":
+    base: Gin
+    category: Highballs
+    ingredients:
+      - Gin: 2 oz
+      - Tonic water: 4 oz
+    directions: |
+      1. Pour gin and tonic over ice in short glass.
+      1. Stir gently.
+      1. Garnish with lime wheel.
+  Gimlet:
+    base: Gin
+    category: Sours
+    ingredients:
+      - Gin: 2 oz
+      - Lime juice: 1 oz
+      - Simple syrup: 0.5 oz
+    directions: |
+      1. Shake with ice.
+      1. Double strain into chilled coupe.
+  Bennet:
+    base: Gin
+    category: Sours
+    ingredients:
+      - Gin: 2 oz
+      - Lime juice: 1 oz
+      - Simple syrup: 0.5  oz
+      - Angostura bitters: 1 dash
+    directions: |
+      1. Shake with ice.
+      1. Double strain into chilled coupe.
 
 out_of_stock:
   - Rye whiskey
