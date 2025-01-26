@@ -20,6 +20,17 @@ menu:
     directions: |
       1. Stir with ice. Strain into rocks glass over large cube.
       1. Garnish with orange twist.
+  Manhattan:
+    base: Bourbon
+    category: Ancestrals
+    ingredients:
+      - Bourbon: 1.5 oz
+      - Sweet vermouth: 1 oz
+      - Angostura bitters: 2 dashes
+    directions: |
+      1. Stir with ice.
+      2. Strain into chilled coupe.
+      3. Garnish with cherry or orange twist.
   Black Manhattan:
     base: Rye whiskey
     category: Spirit-Forward
@@ -82,6 +93,15 @@ menu:
     directions: |
       1. Shake with ice.
       1. Double strain into chilled coupe.
+  Garibaldi:
+    base: Campari
+    category: Highballs
+    ingredients:
+      - Campari: 1.5 oz
+      - Orange juice: 4.5 oz
+    directions: |
+      1. Blend orange juice and Campari until frothy.
+      1. Strain into ice-filled highball.
 
 out_of_stock:
   - Rye whiskey
