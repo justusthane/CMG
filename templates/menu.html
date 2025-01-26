@@ -2,7 +2,7 @@
 {% block title %}Cocktail Menu{% endblock %}
 {% block bodyclass %}menu{% endblock %}
 {% block content %}
-<h1>Cocktails</h1>
+<h1>{% block header %}Cocktails{% endblock %}</h1>
 {% for bev in bevs %}
 	{% for name, details in bev.items() %}
 		<h2>{{ name }}</h2>
