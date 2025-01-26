@@ -3,13 +3,13 @@
 {% block bodyclass %}menu{% endblock %}
 {% block content %}
 <h1>{% block header %}Cocktails{% endblock %}</h1>
-	{% for name, details in bevs.items() %}
-		<h2>{{ name }}</h2>
-		<ul>
-			{% for name, amount in details['ingredients'].items() %}
-				<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
-			{% endfor %}
-		</ul>
-		{% block directions scoped %}{% endblock %}
-	{% endfor %}
+{% for name, details in bevs.items() %}
+	<h2>{{ name }}</h2>
+	<ul>
+		{% for name, amount in details['ingredients'].items() %}
+			<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
+		{% endfor %}
+	</ul>
+	{% block directions scoped %}{% endblock %}
+{% endfor %}
 {% endblock %}
