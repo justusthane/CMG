@@ -7,7 +7,7 @@
 		<ul>
 			{% for ingredient in details['ingredients'] %}
 				{% for name, amount in ingredient.items() %}
-					<li>{{ name }}</li>
+				<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
 				{% endfor %}
 			{% endfor %}
 		</ul>
