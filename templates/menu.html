@@ -6,10 +6,8 @@
 	{% for name, details in bevs.items() %}
 		<h2>{{ name }}</h2>
 		<ul>
-			{% for ingredient in details['ingredients'] %}
-				{% for name, amount in ingredient.items() %}
+			{% for name, amount in details['ingredients'].items() %}
 				<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
-				{% endfor %}
 			{% endfor %}
 		</ul>
 		{% block directions scoped %}{% endblock %}

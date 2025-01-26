@@ -18,8 +18,8 @@ print(menu)
 for bev, details in menu['menu'].items():
     #print(bev)
     print(bev)
-    for ingredient in details['ingredients']:
-        print(f'<li>{ingredient[list(ingredient)[0]]} {list(ingredient)[0]}</li>')
+    #for ingredient in details['ingredients']:
+    #    print(f'<li>{ingredient[list(ingredient)[0]]} {list(ingredient)[0]}</li>')
     print(markdown.markdown(details['directions']))
     details['directions_html'] = markdown.markdown(details['directions'])
 
