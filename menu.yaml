@@ -102,6 +102,21 @@ menu:
     directions: |
       1. Blend orange juice and Campari until frothy.
       1. Strain into ice-filled highball.
+  White Russian:
+    base: Vodka
+    category:
+    ingredients: 
+      Vodka: 1.5 oz
+      Kahlua: 1 oz
+      Heavy cream: 1 oz
+      Instant coffee: 0.5 tsp
+    directions: |
+      1. Chill vodka
+      1. Add large cube to lowball glass
+      1. Sprinkle instant coffee powder over ice
+      1. Slowly pour vodka around ice
+      1. Slowly pour Kahlua around ice
+      1. Slowly pour cream over ice
 
 out_of_stock:
   - Rye whiskey

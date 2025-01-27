@@ -7,27 +7,51 @@ env = Environment(
     autoescape=select_autoescape()
 )
 
-with open('menu.yaml', 'r') as file:
-    menu = yaml.safe_load(file)
+def generateMenu():
+    with open('menu.yaml', 'r') as file:
+        menu = yaml.safe_load(file)
 
-templateMenu = env.get_template("menu.html")
-templateRecipes = env.get_template("recipes.html")
+    templateMenu = env.get_template("menu.html")
+    templateRecipes = env.get_template("recipes.html")
 
-print(menu)
+    for bev, details in menu['menu'].items():
+        #print(bev)
+        print(bev)
+        #for ingredient in details['ingredients']:
+        #    print(f'<li>{ingredient[list(ingredient)[0]]} {list(ingredient)[0]}</li>')
+        details['directions_html'] = markdown.markdown(details['directions'])
 
-for bev, details in menu['menu'].items():
-    #print(bev)
-    print(bev)
-    #for ingredient in details['ingredients']:
-    #    print(f'<li>{ingredient[list(ingredient)[0]]} {list(ingredient)[0]}</li>')
-    print(markdown.markdown(details['directions']))
-    details['directions_html'] = markdown.markdown(details['directions'])
+    menuHtml = templateMenu.render(bevs = menu['menu'])
+    recipesHtml = templateRecipes.render(bevs = menu['menu'])
+    return {'menuHtml': menuHtml, 'recipesHtml': recipesHtml}
 
-with open('index.html', 'w') as file:
-    file.write(templateMenu.render(bevs = menu['menu']))
+if (__name__ == 'build'):
+    from flask import Flask
 
-with open('recipes.html', 'w') as file:
-    file.write(templateRecipes.render(bevs = menu['menu']))
+    app = Flask(__name__)
 
-for ingredient in menu['out_of_stock']:
-    print(ingredient)
+    @app.route("/")
+    def serveMenu():
+        return generateMenu()['menuHtml']
+    @app.route("/recipes")
+    def serveRecipes():
+        return generateMenu()['recipesHtml']
+
+elif (__name__ == '__main__'):
+    html = generateMenu()
+    with open('index.html', 'w') as file:
+        file.write(html['menuHtml'])
+
+    with open('recipes.html', 'w') as file:
+        file.write(html['recipesHtml'])
+
+
+print(generateMenu())
+#print(menu)
+#
+#
+#
+#for ingredient in menu['out_of_stock']:
+#    print(ingredient)
+#
+#print(__name__)
