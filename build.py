@@ -29,7 +29,7 @@ if (__name__ == 'build'):
     from flask import Flask
 
     app = Flask(__name__)
-
+        
     @app.route("/")
     def serveMenu():
         return generateMenu()['menuHtml']
