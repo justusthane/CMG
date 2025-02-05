@@ -8,7 +8,7 @@ env = Environment(
 )
 
 def generateMenu():
-    with open('menu.yaml', 'r') as file:
+    with open('menu/menu.yaml', 'r') as file:
         menu = yaml.safe_load(file)
 
     templateMenu = env.get_template("menu.html")
