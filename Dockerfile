@@ -13,6 +13,4 @@ EXPOSE 5000
 RUN useradd app
 USER app
 
-CMD ["cd", "/usr/local/app"]
-CMD "ls"
-CMD ["flask", "--app", "build", "run", "--host=0.0.0.0"]]
+CMD ["flask", "--app", "build", "run", "--host=0.0.0.0"]
