@@ -14,15 +14,28 @@ def generateMenu():
     templateMenu = env.get_template("menu.html")
     templateRecipes = env.get_template("recipes.html")
 
+    categories = []
+    for bev, details in menu['menu'].items():
+        categories.append(details['category'])
+
+    categories = list(set(categories))
+    print(categories)
+
+    for category in categories:
+        print(category)
+        for bev, details in menu['menu'].items():
+            if details['category'] == category:
+                print(f"\t{bev}")
+                
     for bev, details in menu['menu'].items():
         #print(bev)
-        print(bev)
+        #print(details)
         #for ingredient in details['ingredients']:
         #    print(f'<li>{ingredient[list(ingredient)[0]]} {list(ingredient)[0]}</li>')
         details['directions_html'] = markdown.markdown(details['directions'])
 
-    menuHtml = templateMenu.render(bevs = menu['menu'])
-    recipesHtml = templateRecipes.render(bevs = menu['menu'])
+    menuHtml = templateMenu.render(bevs = menu['menu'], categories = categories)
+    recipesHtml = templateRecipes.render(bevs = menu['menu'], categories = categories)
     return {'menuHtml': menuHtml, 'recipesHtml': recipesHtml}
 
 if (__name__ == 'build'):
@@ -46,7 +59,7 @@ elif (__name__ == '__main__'):
         file.write(html['recipesHtml'])
 
 
-print(generateMenu())
+#print(generateMenu())
 #print(menu)
 #
 #

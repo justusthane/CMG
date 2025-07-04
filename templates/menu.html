@@ -3,13 +3,20 @@
 {% block bodyclass %}menu{% endblock %}
 {% block content %}
 <h1>{% block header %}Cocktails{% endblock %}</h1>
-{% for name, details in bevs.items() %}
-	<h2>{{ name }}</h2>
-	<ul>
-		{% for name, amount in details['ingredients'].items() %}
-			<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
-		{% endfor %}
-	</ul>
-	{% block directions scoped %}{% endblock %}
+{% for category in categories %}
+	<h2>{{ category }}</h1>
+	{% for name, details in bevs.items() %}
+		{% if details['category'] == category %}
+		<div class="bev">
+			<h3>{{ name }}</h2>
+			<ul>
+				{% for name, amount in details['ingredients'].items() %}
+					<li>{% block amount scoped %}{% endblock %}{{ name }}</li>
+				{% endfor %}
+			</ul>
+			{% block directions scoped %}{% endblock %}
+		</div>
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 {% endblock %}

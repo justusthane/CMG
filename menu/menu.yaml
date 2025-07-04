@@ -1,11 +1,12 @@
 ---
 menu:
   Old Fashioned:
-    base: Bourbon
+    base: Rye
     category: Ancestrals
     ingredients:
-      Bourbon: 2 oz
+      Rye whiskey: 2 oz
       Maple syrup: 1tsp
+      Black walnut bitters: 3 dashes
       Angostura bitters: 2 dashes
     directions: |
       1. Stir with ice. Strain into rocks glass over large cube.
@@ -117,6 +118,30 @@ menu:
       1. Slowly pour vodka around ice
       1. Slowly pour Kahlua around ice
       1. Slowly pour cream over ice
+  American Trilogy:
+    base: Brandy/Rye
+    category: Spirit-Forward
+    ingredients:
+      Brandy: 1 oz
+      Rye whiskey: 1 oz
+      Demerara syrup: 1 tsp
+      Angostura bitters: 1 dash
+      Orange bitters: 1 dash
+    directions: |
+      1. Stir ingredients wich ice
+      1. Strain into rocks glass over large cube
+  Bitter Giuseppe:
+    base: Cynar
+    category: Low-ABV
+    ingredients:
+      Cynar: 2 oz
+      Sweet vermouth: 1 oz
+      Lemon juice: 1/4 oz
+      Orange bitters: 6 dashes
+    directions: |
+      1. Stir with ice
+      1. Strain into rocks glass over large cube
+      1. Garnish with lemon twist
 
 out_of_stock:
-  - Rye whiskey
+  - Orange juice
